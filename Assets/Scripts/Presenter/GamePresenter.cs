@@ -127,6 +127,8 @@ public class GamePresenter: MonoBehaviour
             if (obstacleView != null)
             {
                 obstacleView.SetMoveDirection(moveDirection);
+                float velocity = Random.Range(2.5f, 10.5f);
+                obstacleView.SetSpeed(velocity);
                 ObstaclesInList.Add(obstacleView);
             }
             else
@@ -137,6 +139,7 @@ public class GamePresenter: MonoBehaviour
         ObstaclesInList.RemoveAll(ob => ob == null);
         foreach (var obstacle in ObstaclesInList)
         {
+            
             obstacle.Move();
 
         }

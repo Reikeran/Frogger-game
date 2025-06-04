@@ -3,14 +3,17 @@ using UnityEngine;
 public class ObstacleView : MonoBehaviour
 {
     private Vector3 moveDirection;
-    [SerializeField] private float speed;
+    public float speed;
     [SerializeField] private SpriteRenderer spriteRenderer;
     public void SetMoveDirection(Vector3 direction)
     {
         moveDirection = direction.normalized;
         if(spriteRenderer != null) { spriteRenderer.flipY = moveDirection.x <0; }
     }
-
+    public void SetSpeed(float velocity)
+    {
+        speed = velocity;
+    }
     public Vector3 GetMoveDirection()
     {
         return moveDirection;

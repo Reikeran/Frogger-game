@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 0357098ff00371a4f95d2d5362740217
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2612844575862691386
+    second: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_0"
+  - first:
+      213: 2387594029812026888
+    second: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_1"
+  - first:
+      213: 4739497513511226232
+    second: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_2"
+  - first:
+      213: 1519830235404142047
+    second: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_3"
+  - first:
+      213: -6250063415529012096
+    second: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_4"
+  - first:
+      213: 5025002264874446663
+    second: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_5"
+  - first:
+      213: -5527898933878623431
+    second: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_6"
+  - first:
+      213: 8069581844877013888
+    second: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_7"
+  - first:
+      213: -8090525777035520846
+    second: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_8"
+  - first:
+      213: -8061195298340240964
+    second: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_9"
+  - first:
+      213: -2737191957191865382
+    second: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_10"
+  - first:
+      213: 8764372566237725181
+    second: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_11"
+  - first:
+      213: 107432900013181602
+    second: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_12"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_0"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 906
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9e562a3bf4dbbd0800000000000000
+      internalID: -2612844575862691386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_1"
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 910
+        width: 91
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e0acebe10722120800000000000000
+      internalID: 2387594029812026888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_2"
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 929
+        width: 28
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b0faaa0e316c140800000000000000
+      internalID: 4739497513511226232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_3"
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 926
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd58924fb85871510800000000000000
+      internalID: 1519830235404142047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_4"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 848
+        width: 131
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0848ab510705349a0800000000000000
+      internalID: -6250063415529012096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_5"
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 841
+        width: 115
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74fef51bfe46cb540800000000000000
+      internalID: 5025002264874446663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_6"
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 912
+        width: 125
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93377eb2535f843b0800000000000000
+      internalID: -5527898933878623431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_7"
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 857
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 083f5d5fee9ecff60800000000000000
+      internalID: 8069581844877013888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_8"
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 854
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b418a5dbada8bf80800000000000000
+      internalID: -8090525777035520846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_9"
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 847
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb181611691e02090800000000000000
+      internalID: -8061195298340240964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_10"
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 846
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adbc58dca6a830ad0800000000000000
+      internalID: -2737191957191865382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_11"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 826
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df147c1d96e41a970800000000000000
+      internalID: 8764372566237725181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_12"
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 808
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aac97247adad7100800000000000000
+      internalID: 107432900013181602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_0": -2612844575862691386
+      "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_1": 2387594029812026888
+      "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_10": -2737191957191865382
+      "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_11": 8764372566237725181
+      "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_12": 107432900013181602
+      "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_2": 4739497513511226232
+      "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_3": 1519830235404142047
+      "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_4": -6250063415529012096
+      "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_5": 5025002264874446663
+      "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_6": -5527898933878623431
+      "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_7": 8069581844877013888
+      "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_8": -8090525777035520846
+      "\u2014Pngtree\u2014grass realistic green plants_8285062(1)_9": -8061195298340240964
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

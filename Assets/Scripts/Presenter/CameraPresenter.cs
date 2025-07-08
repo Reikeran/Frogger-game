@@ -5,27 +5,22 @@ public class CameraPresenter
     private CameraModel model;
     private CameraView view;
     private Playermodel playerModel;
-    private float smoothSpeed = 5f;
+    private float smoothSpeed;
 
-    public CameraPresenter(CameraModel model, CameraView view, Playermodel playerModel)
+    public CameraPresenter(CameraModel model, CameraView view, Playermodel playerModel, float smoothSpeed = 5f)
     {
         this.model = model;
         this.view = view;
         this.playerModel = playerModel;
+        this.smoothSpeed = smoothSpeed;
     }
 
-    public void UpdateCamera()
+    public void UpdateCamera(float deltaTime)
     {
-        Vector3 targetPosition = model.GetCameraPosition(playerModel.Position);
-
-        Vector3 currentCameraPosition = view.GetPosition();
-
-        Vector3 smoothPosition = Vector3.Lerp(
-            currentCameraPosition,
-            targetPosition,
-            Time.deltaTime * smoothSpeed
-        );
-        smoothPosition.z = model.Offset.z;
-        view.SetPosition(smoothPosition);
+        Vector3 targetPos = model.GetCameraPosition(playerModel.Position);
+        Vector3 currentPos = view.GetPosition();
+        Vector3 smoothPos = Vector3.Lerp(currentPos, targetPos, deltaTime * smoothSpeed);
+        view.SetPosition(smoothPos);
     }
 }
+

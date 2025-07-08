@@ -7,18 +7,42 @@ public class PlayerView : MonoBehaviour
     public Sprite leftSprite;
     public Sprite rightSprite;
     public AudioClip stepclip;
-    void Awake()
+
+    private SpriteRenderer spriteRenderer;
+    private PlayerPresenter presenter;
+
+    public void Init(PlayerPresenter presenter)
+    {
+        this.presenter = presenter;
+    }
+
+    public void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    private SpriteRenderer spriteRenderer;
-    public void SetPosition(Vector3 position)
+
+    private void Update()
+    {
+        Vector3 input = Vector3.zero;
+
+        if (Input.GetKeyDown(KeyCode.W)) input = Vector3.up;
+        else if (Input.GetKeyDown(KeyCode.S)) input = Vector3.down;
+        else if (Input.GetKeyDown(KeyCode.A)) input = Vector3.left;
+        else if (Input.GetKeyDown(KeyCode.D)) input = Vector3.right;
+
+        if (input != Vector3.zero && presenter != null)
+        {
+            presenter.OnInput(input);
+        }
+    }
+
+    public virtual void SetPosition(Vector3 position)
     {
         transform.position = position;
     }
-    public void UpdateSprite(MoveDir dir)
+
+    public virtual void UpdateSprite(MoveDir dir)
     {
-        SoundManager.Instance.PlaySFX(stepclip);
         switch (dir)
         {
             case MoveDir.Up:

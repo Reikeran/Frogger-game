@@ -19,7 +19,7 @@ public class ObstacleView : MonoBehaviour
         return moveDirection;
     }
 
-    public void Move()
+    public virtual void Move()
     {
         transform.position += moveDirection * Time.deltaTime * speed;
     }

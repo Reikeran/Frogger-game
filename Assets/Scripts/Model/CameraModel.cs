@@ -9,8 +9,10 @@ public class CameraModel
         Offset = offset;
     }
 
-    public Vector3 GetCameraPosition (Vector3 playerpos)
+    public Vector3 GetCameraPosition(Vector3 playerPosition)
     {
-        return new Vector3(0, playerpos.y, Offset.z);
+        
+        return new Vector3(Offset.x, playerPosition.y + Offset.y, Offset.z);
     }
 }
+

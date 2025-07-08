@@ -1,32 +1,23 @@
 using System.Collections.Generic;
-using NUnit.Framework;
 using UnityEngine;
-using System;
-using static UnityEditor.PlayerSettings;
 
 public class GameModel
 {
-    public bool IsGameOver {  get; private set; }
-    public Action<bool> OnPlayerHit;
-    public void CheckCollision(Collider2D playerCollider, List<Collider2D> obstacleColliders, AudioClip collisionSound)
+    public bool IsGameOver { get; private set; }
+
+    public event System.Action<bool> OnGameEnd; // bool = ganó o perdió
+
+    public void PlayerHit()
     {
-        foreach (var obstacle in obstacleColliders)
-        {
-            if (playerCollider.bounds.Intersects(obstacle.bounds))
-            {
-                SoundManager.Instance.PlaySFX(collisionSound);
-                OnPlayerHit?.Invoke(false);
-                EndGame();
-                return;
-            }
-        }
-    }
-    public void EndGame()
-    {
+        if (IsGameOver) return;
         IsGameOver = true;
+        OnGameEnd?.Invoke(false);
     }
-    public void ResetGame()
+
+    public void PlayerWin()
     {
-        IsGameOver = false;
+        if (IsGameOver) return;
+        IsGameOver = true;
+        OnGameEnd?.Invoke(true);
     }
 }

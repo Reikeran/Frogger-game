@@ -556,10 +556,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1011137306}
-  - component: {fileID: 1011137307}
   - component: {fileID: 1011137310}
   - component: {fileID: 1011137309}
   - component: {fileID: 1011137308}
+  - component: {fileID: 1011137311}
+  - component: {fileID: 1011137312}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -582,24 +583,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1011137307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1011137305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07667578aee906e499ccac83403bba29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerView: {fileID: 1380964563}
-  ObstaclePrefab: {fileID: 8959929619653416511, guid: e9e4b8e3f122f6e47890b2eccdf9b120, type: 3}
-  ExplosionPrefab: {fileID: 4043684050457090835, guid: 7ed1776d098dcd94483ba23568fdd316, type: 3}
-  minBoundspos: {fileID: 410248519}
-  maxBoundspos: {fileID: 107627666}
-  crashclip: {fileID: 8300000, guid: f78931797f3062d47b4c2d9b39bcbaf6, type: 3}
 --- !u!82 &1011137308
 AudioSource:
   m_ObjectHideFlags: 0
@@ -809,6 +792,38 @@ MonoBehaviour:
   bgmSource: {fileID: 1011137309}
   sfxSource: {fileID: 1011137308}
   backgroundMusic: {fileID: 8300000, guid: 5b9fcf7c18a283e4ea567998c1affddb, type: 3}
+--- !u!114 &1011137311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011137305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07667578aee906e499ccac83403bba29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerView: {fileID: 1380964563}
+  SpawnerView: {fileID: 1011137312}
+  CameraView: {fileID: 519420033}
+  minBoundspos: {fileID: 410248519}
+  maxBoundspos: {fileID: 107627666}
+  ExplosionPrefab: {fileID: 4043684050457090835, guid: 7ed1776d098dcd94483ba23568fdd316, type: 3}
+  crashclip: {fileID: 8300000, guid: f78931797f3062d47b4c2d9b39bcbaf6, type: 3}
+--- !u!114 &1011137312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011137305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e73e1841f8ec24887d0eb31d87391a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstaclePrefab: {fileID: 8959929619653416511, guid: e9e4b8e3f122f6e47890b2eccdf9b120, type: 3}
 --- !u!114 &1380964563 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5674712836214156227, guid: f44b85532be77e54b9e20385bb7fab4f, type: 3}
@@ -919,6 +934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square
       objectReference: {fileID: 0}
+    - target: {fileID: 413544362613982279, guid: f44b85532be77e54b9e20385bb7fab4f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 914902469517262148, guid: f44b85532be77e54b9e20385bb7fab4f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -974,6 +993,10 @@ PrefabInstance:
     - target: {fileID: 6416827659112773491, guid: f44b85532be77e54b9e20385bb7fab4f, type: 3}
       propertyPath: m_Offset.y
       value: -0.013674218
+      objectReference: {fileID: 0}
+    - target: {fileID: 6416827659112773491, guid: f44b85532be77e54b9e20385bb7fab4f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

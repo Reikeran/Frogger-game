@@ -2,11 +2,24 @@ using UnityEngine;
 
 public class CameraView : MonoBehaviour
 {
-    public void SetPosition(Vector3 position)
+    private CameraPresenter presenter;
+
+    public void Init(CameraPresenter presenter)
+    {
+        this.presenter = presenter;
+    }
+
+    private void Update()
+    {
+        presenter?.UpdateCamera(Time.deltaTime);
+    }
+
+    public virtual void SetPosition(Vector3 position)
     {
         transform.position = position;
     }
-    public Vector2 GetPosition()
+
+    public virtual Vector3 GetPosition()
     {
         return transform.position;
     }

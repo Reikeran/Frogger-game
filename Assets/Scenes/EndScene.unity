@@ -203,9 +203,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1634524341}
-        m_TargetAssemblyTypeName: EndScene, Assembly-CSharp
-        m_MethodName: QuitGame
+      - m_Target: {fileID: 1634524342}
+        m_TargetAssemblyTypeName: EndSceneView, Assembly-CSharp
+        m_MethodName: OnQuitGameButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -548,9 +548,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1634524341}
-        m_TargetAssemblyTypeName: EndScene, Assembly-CSharp
-        m_MethodName: ReturnToMenu
+      - m_Target: {fileID: 1634524342}
+        m_TargetAssemblyTypeName: EndSceneView, Assembly-CSharp
+        m_MethodName: OnReturnToMenuButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 1634524338}
   - component: {fileID: 1634524337}
   - component: {fileID: 1634524336}
-  - component: {fileID: 1634524341}
+  - component: {fileID: 1634524342}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -703,7 +703,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1634524341
+--- !u!114 &1634524342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -712,11 +712,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1634524335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f1c0ae41aaaf1046925f2b1787d9573, type: 3}
+  m_Script: {fileID: 11500000, guid: f7d7f79c0789b6a48aa5fe5df925fa87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   messageText: {fileID: 1106327356}
-  sceneToChange: MainMenu
+  menuSceneName: MainMenu
 --- !u!1 &1721034114
 GameObject:
   m_ObjectHideFlags: 0

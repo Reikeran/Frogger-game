@@ -40,7 +40,7 @@ public class SoundManager : MonoBehaviour
             bgmSource.Stop();
         }
     }
-    public void PlaySFX(AudioClip clip)
+    public virtual void PlaySFX(AudioClip clip)
     {
         if (sfxSource != null && clip != null)
         {

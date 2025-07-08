@@ -4,28 +4,32 @@ public class PlayerPresenter
 {
     private Playermodel model;
     private PlayerView view;
-    public PlayerPresenter(Playermodel Model, PlayerView View)
+    private GameModel gamemodel;
+    private bool isInputEnabled = true;
+    public event System.Action OnPlayerWin;
+    public PlayerPresenter(Playermodel model, PlayerView view)
     {
-        this.model = Model;
-        this.view = View;
+        this.model = model;
+        this.view = view;
         view.SetPosition(model.Position);
     }
-    public void updatePresenter()
+    public void SetInputEnabled(bool enabled)
     {
-        
-        Vector3 input = Vector3.zero;
-        if (Input.GetKeyDown(KeyCode.W)) { input = Vector3.up; }
-        if (Input.GetKeyDown(KeyCode.S)) { input = Vector3.down; }
-        if (Input.GetKeyDown(KeyCode.A)) { input = Vector3.left; }
-        if (Input.GetKeyDown(KeyCode.D)) { input = Vector3.right; }
+        isInputEnabled = enabled;
+    }
+    public void OnInput(Vector3 input)
+    {
+        if (!isInputEnabled) return;
+        if (model == null || input == Vector3.zero) return;
 
-        if(input != Vector3.zero)
+        model.Move(input);
+        view.SetPosition(model.Position);
+        model.UpdateDirection(input);
+        view.UpdateSprite(model.LastDirection);
+        SoundManager.Instance.PlaySFX(view.stepclip);
+        if (model.CheckWin())
         {
-            model.Move(input);
-            view.SetPosition(model.Position);
-            model.UpdateDirection(input);
-            view.UpdateSprite(model.LastDirection);
+            OnPlayerWin?.Invoke();
         }
     }
- 
 }

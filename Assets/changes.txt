@@ -1,0 +1,18 @@
+The update logic was removed from the GameManager class's Update method.
+
+
+An MVP architecture was implemented for the obstacle spawning system.
+
+
+The original EndScenePresenter directly called Unity's static methods to load scenes and quit the application. This was refactored by introducing an interface to abstract these operations.
+
+An Assembly Definition file was created to enable PlayMode tests integration in the project.
+
+
+The CameraView class had its SetPosition and GetPosition methods made virtual to allow mocking in tests.
+
+
+The SoundManager instance reference was moved from PlayerView to PlayerPresenter
+
+
+The PlayerView was modified to remove the dependency on the SoundManager singleton instance

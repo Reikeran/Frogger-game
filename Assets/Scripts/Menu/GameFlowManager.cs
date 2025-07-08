@@ -21,7 +21,7 @@ public class GameFlowManager : MonoBehaviour
     public void EndGame(bool won)
     {
         PlayerWon = won;
-        SoundManager.Instance. StopBGM();
+        SoundManager.Instance.StopBGM();
         if (won)
         {
             SceneManager.LoadScene(endgamescene);

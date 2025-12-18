@@ -11,10 +11,10 @@ jobs:
     name: Build WebGL
     runs-on: ubuntu-latest
     steps:
-      - name: Descargar repositorio
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Cache de la carpeta Library
+      - name: Cache Library
         uses: actions/cache@v3
         with:
           path: Library
@@ -27,3 +27,32 @@ jobs:
           targetPlatform: WebGL
           buildName: WebGLBuild
           cache: true
+
+  run-tests:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Unit Tests
+        uses: game-ci/unity-test-runner@v3
+        with:
+          unityVersion: '6000.0.47f1'
+          testMode: playmode
+
+  build-windows:
+    name: Build Windows
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Build Windows
+        uses: game-ci/unity-builder@v3
+        with:
+          unityVersion: '2023.2.0f1'       # Cambialo por tu versión de Unity
+          targetPlatform: StandaloneWindows64
+          buildName: WindowsBuild
+          cache: true
+

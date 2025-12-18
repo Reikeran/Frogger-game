@@ -1,12 +1,10 @@
-- name: Unity - Activate
-  uses: game-ci/unity-activate@v2.0.0
-name: Actions
+name: Actions 😎
 
 on: [push, pull_request]
 
 jobs:
   build:
-    name: Build my project
+    name: Build my project ✨
     runs-on: ubuntu-latest
     steps:
       # Checkout

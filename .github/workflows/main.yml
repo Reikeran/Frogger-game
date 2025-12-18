@@ -1,0 +1,89 @@
+name: Unity CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  webgl-build:
+    name: Build WebGL
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Cache Library folder
+        uses: actions/cache@v3
+        with:
+          path: Library
+          key: ${{ runner.os }}-unity-${{ hashFiles('**/*.cs') }}
+
+      - name: Setup Unity
+        uses: game-ci/unity-builder@v3
+        with:
+          version: 6000.0.47f1
+          unityLicense: ${{ secrets.UNITY_LICENSE }}
+          targetPlatform: WebGL
+
+      - name: Build WebGL
+        uses: game-ci/unity-builder@v3
+        with:
+          version: 6000.0.47f1
+          unityLicense: ${{ secrets.UNITY_LICENSE }}
+          targetPlatform: WebGL
+          buildName: Builds/WebGL
+          customParameters: -quit -batchmode -nographics
+
+  windows-build:
+    name: Build Windows
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Unity
+        uses: game-ci/unity-builder@v3
+        with:
+          version: 6000.0.47f1
+          unityLicense: ${{ secrets.UNITY_LICENSE }}
+          targetPlatform: StandaloneWindows64
+
+      - name: Build Windows
+        uses: game-ci/unity-builder@v3
+        with:
+          version: 6000.0.47f1
+          unityLicense: ${{ secrets.UNITY_LICENSE }}
+          targetPlatform: StandaloneWindows64
+          buildName: Builds/Windows
+          customParameters: -quit -batchmode -nographics
+
+  unit-tests:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+    needs: [webgl-build, windows-build]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Unity
+        uses: game-ci/unity-builder@v3
+        with:
+          version: 2021.3.15f1
+          unityLicense: ${{ secrets.UNITY_LICENSE }}
+
+      - name: Run EditMode Tests
+        uses: game-ci/unity-test-runner@v2
+        with:
+          unityVersion: 2021.3.15f1
+          testMode: editmode
+
+      - name: Run PlayMode Tests
+        uses: game-ci/unity-test-runner@v2
+        with:
+          unityVersion: 2021.3.15f1
+          testMode: playmode

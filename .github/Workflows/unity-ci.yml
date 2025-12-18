@@ -2,9 +2,9 @@ name: Unity CI
 
 on:
   push:
-    branches: [ main ]   # Ejecuta cada push a main
+    branches: [ main ]
   pull_request:
-    branches: [ main ]   # También se puede ejecutar en PRs
+    branches: [ main ]
 
 jobs:
   build-webgl:
@@ -23,7 +23,7 @@ jobs:
       - name: Build WebGL
         uses: game-ci/unity-builder@v3
         with:
-          unityVersion: '2023.2.0f1'      # Cambiá por tu versión
+          unityVersion: '6000.0.47f1'
           targetPlatform: WebGL
           buildName: WebGLBuild
           cache: true

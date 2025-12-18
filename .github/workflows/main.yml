@@ -1,0 +1,29 @@
+name: Unity CI
+
+on:
+  push:
+    branches: [ main ]   # Ejecuta cada push a main
+  pull_request:
+    branches: [ main ]   # También se puede ejecutar en PRs
+
+jobs:
+  build-webgl:
+    name: Build WebGL
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v3
+
+      - name: Cache de la carpeta Library
+        uses: actions/cache@v3
+        with:
+          path: Library
+          key: ${{ runner.os }}-unity-${{ hashFiles('**/*.cs') }}
+
+      - name: Build WebGL
+        uses: game-ci/unity-builder@v3
+        with:
+          unityVersion: '2023.2.0f1'      # Cambiá por tu versión
+          targetPlatform: WebGL
+          buildName: WebGLBuild
+          cache: true
